@@ -33,7 +33,8 @@
             try {
                 bwipjs.toCanvas(canvas, {
                     bcid: 'gs1databarlimited',
-                    text: gtin,
+                    text: '(01)' + gtin,
+                    parsefnc: true,
                     scale: 3,
                     height: 10,
                     includetext: true,
